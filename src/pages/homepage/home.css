@@ -1,0 +1,469 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    background-color: #f9f9f9;
+  }
+
+/* Base styles */
+.homeFlyerContainer {
+  min-height: 90vh;
+  background-image: url("../../assets/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Animation for the main heading */
+.homeFlyerContainer h1 {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(27, 163, 61);
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 55px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animation for the subheading */
+.homeFlyerContainer h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+/* Animation for the secondary heading */
+.homeFlyerContainer h4 {
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+/* Keyframes for the fade-in up animation */
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Optional: Smooth animation for the h1 span */
+.homeFlyerContainer h1 span {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp 1s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes scaleUp {
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+.htmBtnContainer{
+    margin-top: 100px;
+}
+
+.catSection {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .catSection h1{
+    text-align: center;
+    margin: 20px 0px;
+    color:  rgb(27, 163, 61);
+    font-weight: 900;
+    font-family:  'Lato', sans-serif;
+}
+
+.cath2
+{
+    color:  rgb(27, 163, 61);
+    font-weight: 600;
+  font-family:  'Roboto', sans-serif;
+  margin: 20px 0px;
+}
+
+.catImgContainer{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.catImg{
+    width: 200px;
+    height: 100%;
+    padding: 0px 50px 0px 0px;
+    object-fit: contain;
+}
+  
+h1.choose
+{
+  text-align: center;
+  /* margin: 20px 0px; */
+  color:  rgb(27, 163, 61);
+  font-weight: 900;
+  font-family:  'Lato', sans-serif;
+}
+
+ 
+  .categoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .categoryCard {
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .choosecategoryCard{
+    /* padding: 10px; */
+    width: 300px;
+    text-align: center;
+    
+    padding: 10px 0px;
+}
+
+.choosecategoryCard h1{
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.choosecategoryCard p{
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.choosecatImgContainer{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.choosecatImg{
+    width: 300px;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.choosecategoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+ 
+}
+
+.choosecategoryCard {
+  display: grid;
+  max-width: 300px;
+  max-height: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.choosecategoryCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.choosecatImgContainer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.choosecatImg {
+  width: 200px;
+  height: 100px;
+  margin: 0px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.choosecategoryCard:hover .choosecatImg {
+  transform: scale(1.05);
+}
+
+.choosecategoryCard h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgb(27, 163, 61);
+  margin: 15px 0 10px;
+  font-weight: 900;
+  font-family:  'Lato', sans-serif;
+}
+
+.choosecategoryCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.catalog-carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+p.catalogP
+{
+  text-align: center;
+  font-size: 2rem;
+/* margin: 20px 0px; */
+color:  rgb(27, 163, 61);
+font-weight: 900;
+font-family:  'Lato', sans-serif;
+}
+
+.carousel {
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out; 
+}
+
+.carousel-item {
+  width: 100%;
+  opacity: 0; 
+  transform: translateX(100%);
+  animation: slideIn 1s forwards; 
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-item:hover {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.catalogCard {
+  flex: 0 0 auto;
+  width: 300px; 
+  margin: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.catalogCard img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+
+img.catalogCard
+{
+  width: 100px;
+  height: 100%;
+
+}
+
+.catalogCard h2
+{
+  font-size: 20px;
+  color:  rgb(27, 163, 61);
+  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+}
+
+.catalogCard p
+{
+  font-size: 15px;
+  margin: 10px 0px;
+  font-weight: 550;
+}
+
+.links
+{
+  color:  rgb(27, 163, 61);
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.links:hover
+{
+  color:  rgb(182, 228, 194);
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;}
+
+/* Carousel Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+  
+
+
+
+@media screen and (max-width:768px) {
+
+    .homeFlyerContainer{
+        min-height: 10vh;
+    }  
+
+    .homeFlyerContainer h1
+    {
+        font-size: 40px;
+    }
+
+    .homeFlyerContainer h1 span
+    {
+        font-size: 40px;
+    }
+
+    .homeFlyerContainer h3
+    {
+        font-size: 18px;
+    }
+
+    .homeFlyerContainer h4
+    {
+        font-size: 25px;
+    }
+
+    .catImg{
+      width: 200px;
+      height: 100%;
+      padding: 0px 0px 0px 90px;
+      object-fit: contain;
+  }
+
+    .categoryContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+    
+    .categoryCard {
+      width: 500px;
+    }
+    
+    .cath2
+{
+    padding: 20px 0px 20px 0px;
+    font-weight: 800;
+}
+
+.catSection h1
+  {
+    font-size: 25px;
+  }
+   
+  .choosecategoryCard {
+    display: grid;
+    max-width: 800px;
+    max-height: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+}
